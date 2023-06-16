@@ -1,0 +1,13 @@
+
+# file
+*.solution.*
+
+# folder
+node_modules
+solution
+
+### macOS ###
+# General
+.DS_Store
+.AppleDouble
+.LSOverride

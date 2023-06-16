@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 선택자 우선순위 */
+    /* 선택자를 더 구체적으로 적을수록 우선 적용된다 */
+    .outter .middle .inner {
+      color: blue;
+    }
+
+    .middle .inner {
+      color: orange;
+    }
+
+    .inner {
+      color: red;
+    }
+    /* 선택자의 우선순위가 같은경우, 나중에 쓴 선택자가 적용된다 */
+    .wrapper .box {
+      color: orange;
+    }
+    .wrapper .box {
+      color: red;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="outter">
+    <div class="middle">
+      <div id="good-inner" class="inner">
+        good
+      </div>
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <div class="box">
+      good box
+    </div>
+  </div>
+
+</body>
+</html>

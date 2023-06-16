@@ -1,0 +1,22 @@
+/* 더 구체적으로 선택자를 명시한 스타일이 우선적으로 적용됨 */
+
+header .title-wrapper .title {
+  color: rgb(0, 128, 0);
+}
+
+.title-wrapper .title {
+  color: blue;
+}
+
+.title {
+  color: red;
+}
+
+/* 같은 수준의 선택자 명시방법일 경우 나중에 명시된 스타일이 우선적으로 적용된다. */
+main article section p {
+  color: red;
+}
+
+main article section p {
+  color: blue;
+}

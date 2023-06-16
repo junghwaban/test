@@ -1,0 +1,24 @@
+h1 {
+  color: red;
+  font-size: 20px;
+}
+
+#header-title {
+  color: blue;
+  font-size: 30px;
+}
+
+.header-class {
+  color: skyblue;
+  font-size: 25px;
+}
+
+.multiple.sub-header {
+  color: orange;
+  font-size: 25px;
+}
+
+header .in-the-header-h1 {
+  color: yellow;
+  font-size: 25px;
+}

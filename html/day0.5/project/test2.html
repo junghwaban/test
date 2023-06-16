@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 선택자 공식 -> 자식요소 */
+    /* 
+      자식 요소를 지정 할때는 
+      1. 띄어쓰기 사용
+        띄어쓰기는 자식요소중에 해당하는 모든 요소에 적용된다.
+      2. 화살표(>) 사용
+        바로 밑에 자식요소에만 적용된다.
+    */
+    .parents1 #children {
+      color: red;
+      font-size: 40px;
+      font-weight: 600;
+    }
+
+    .parents2 > #children {
+      color: blue;
+      font-size: 50px;
+    }
+
+    /* 선택자 공식 -> 다중 선택자 */
+    .multi-class {
+      color: orange;
+    }
+    .font-class {
+      font-size: 50px;
+    }
+
+    .multi-class.font-class {
+      color: red;
+      font-size: 100px;
+    }
+  </style>
+</head>
+<body>
+  <div class="parents1">
+    <div class="wrapper">
+      <div id="children">
+        this is children
+      </div>
+    </div>
+  </div>
+
+  <div class="parents2">
+    <div class="wrapper">
+      <div id="children">
+        this is children
+      </div>
+    </div>
+    <div id="children">
+      this is children
+    </div>
+  </div>
+
+  <div class="multi-class font-class">
+    this is multi class
+  </div>
+
+  <div class="multi-class">
+    this is multi class
+  </div>
+
+  
+</body>
+</html>

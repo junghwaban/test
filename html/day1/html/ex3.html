@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+
+    .main {
+      border: 1px solid black;
+      padding: 20px;
+    }
+
+    /* 방법 1 */
+    /* .main {
+      overflow: hidden;
+    } */
+
+    /* 방법 2 */
+    .main {
+      width: 100%;
+      display: inline-block;
+    }
+
+    /* 방법 3 */
+    /* .clear {
+      clear: both;
+    } */
+
+    /* 방법 4 */
+    /* .main::after {
+      content: "";
+      display: block;
+      clear: both;
+    } */
+    
+    .main .section {
+      float: left;
+      width: 45%;
+      height: 300px;
+      border: 1px solid black;
+    }
+
+    
+
+  </style>  
+</head>
+<body>
+  <div class="main">
+    <div class="section section1"></div>
+    <div class="section section2"></div>
+  </div>
+</body>
+
+</html>
