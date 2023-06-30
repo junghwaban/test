@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+}
+
+.overflow {
+  width: 300px;
+  height: 300px;
+  margin-bottom: 200px;
+  border: 1px solid black;
+
+  .children {
+    background-color: #574a4a;
+  }
+
+  &.visible {
+    overflow: visible;
+
+    .children {
+      width: 450px;
+      height: 100px;
+    }
+  }
+
+  &.hidden {
+
+    .children {
+      width: 450px;
+      height: 100px;
+    }
+  }
+
+  &.scroll-x {
+
+    .children {
+      width: 450px;
+      height: 100px;
+    }
+  }
+
+  &.scroll-y {
+
+    .children {
+      width: 100px;
+      height: 450px;
+    }
+  }
+
+  &.auto1 {
+
+    .children {
+      width: 450px;
+      height: 450px;
+    }
+  }
+
+  &.auto2 {
+
+    .children {
+      width: 250px;
+      height: 250px;
+    }
+  }
+}

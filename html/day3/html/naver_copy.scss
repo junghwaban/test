@@ -1,0 +1,39 @@
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.some-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 750px;
+  background-color: #f7f9fa;
+  border: 1px solid #dae1e6;
+  padding: 12px 15px 11px 15px;
+
+  .news-list {
+    display: flex;
+
+    .news-label {
+      margin-right: 10px;
+    }
+  }
+
+  .category-menu {
+    display: flex;
+
+    .category-label {
+      margin-right: 10px;
+    }
+
+    .category-list {
+      display: flex;
+
+      li:not(:last-child) {
+        margin-right: 10px;
+      }
+    }
+  }
+}

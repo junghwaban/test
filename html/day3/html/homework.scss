@@ -1,0 +1,276 @@
+@import "util.scss";
+
+$contentWidth: 1370px;
+
+body {
+  margin: 0;
+}
+
+ul, li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  border: 0;
+  background-color: inherit;
+}
+
+header {
+  border-bottom: 1px solid #efefef;
+
+  .header-content {
+    @include flex-row;
+    justify-content: space-between;
+
+    width: $contentWidth;
+    margin: 0 auto;
+
+    .menu-list {
+      display: flex;
+
+      li{
+        @include flex-row;
+        width: 96px;
+        height: 73px;
+        cursor: pointer;
+        color: #909090;
+        font-size: 12px;
+
+        &:not(:first-child) {
+          margin-left: 20px;
+        }
+      }
+    }
+
+    .action-wrapper {
+      display: flex;
+
+      .social-link-list {
+        @include flex-row;
+        justify-content: space-between;
+        margin-right: 20px;
+
+        li{
+          &:not(:last-child) {
+            margin-right: 12px;
+          }
+
+          i {
+            font-size: 20px;
+            color: #626262;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .search-box {
+        i {
+          font-size: 24px;
+          color: #626262;
+          cursor: pointer;
+        }
+      }
+
+    }
+  }
+}
+
+main {
+  article {
+    // article이 section을 감싸는 구조
+    // article이 contentWidth 만큼 폭을 가지게 함
+    width: $contentWidth;
+    margin: 0 auto;
+
+    &.main-header {
+      margin-bottom: 70px;
+
+      .logo {
+        font-size: 75px;
+        font-weight: lighter;
+        text-align: center;
+        letter-spacing: 0.17em;
+        padding: 62px 0;
+  
+        span{
+          color: #24C48A;
+        }
+      }
+
+      .top-post {
+        position: relative;
+        height: 725px;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+  
+        .top-post-content-wrapper {
+          position: absolute;
+          background-color: #00000050;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+  
+          .top-post-content {
+            @include flex-col-start;
+            align-items: center;
+  
+            h4 {
+              margin-top: 168px;
+              margin-bottom: 36px;
+              font-size: 16px;
+              color: #ffffff;
+            }
+  
+            h2 {
+              font-size: 45px;
+              font-weight: 400;
+              color: #ffffff;
+              margin-bottom: 56px;
+            }
+  
+            .countinue-btn {
+              font-size: 24px;
+              padding: 16px 20px;
+              color: #ffffff;
+              border: 1px solid #ffffff;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+
+    &.main-content {
+      @include flex-row;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      .post-list {
+        flex: 1;
+
+        h4 {
+          color: #c6c6c6;
+          font-size: 16px;
+          text-align: center;
+          margin-bottom: 16px;
+        }
+
+        h2 {
+          font-size: 32px;
+          text-align: center;
+          font-weight: 700;
+          margin-bottom: 48px;
+        }
+
+        .blog-post-image {
+          width: 100%;
+          height: 683px;
+          object-fit: cover;
+          margin-bottom: 40px;
+        }
+
+        p {
+          color: #959595;
+          font-size: 16px;
+          margin-bottom: 24px;
+
+          &:last-child {
+            margin-bottom: 40px;
+          }
+        }
+
+        .button-wrapper {
+          text-align: center;
+
+          button {
+            font-size: 16px;
+            padding: 4px 7.5px;
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+          }
+        }
+      }
+
+      .author-info {
+        width: 320px;
+        margin-left: 30px;
+        
+        // 반응형 요소때 사용하기 위한 flex 선언
+        display: flex;
+        flex-direction: column;
+
+        // .info-title 이 공통으로 쓰이므로
+        // .about-me, .instagram 밖에다 선언함
+        .info-title {
+          @include flex-row;
+          position: relative;
+          color: #666666;
+          height: 35px;
+          margin-bottom: 20px;
+
+          span {
+            display: inline-block;
+            background-color: #fff;
+            padding: 0 10px;
+          }
+
+          &::before {
+            // 가상요소를 사용하기 위해선 content를 선언해줘야 함
+            content: '';
+            position: absolute;
+            width: 100%;
+            border-top: 1px solid #666;
+            z-index: -1;
+          }
+        }
+
+        .about-me {
+          margin-bottom: 52px;
+
+          .about-me-image {
+            width: 100%;
+            height: 337px;
+            margin-bottom: 32px;
+          }
+
+          p {
+            color: #959595;
+            font-size: 16px;
+            letter-spacing: 0.1em;
+          }
+        }
+
+        .instagram {
+          .instagram-image-wrapper {
+            @include flex-row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            img {
+              width: calc(50% - 6px);
+              margin-bottom: 12px;
+            }
+          }
+        }
+
+      }
+    }
+  }
+}
+
+footer {
+  padding: 50px 0;
+  margin-top: 120px;
+
+  p{
+    text-align: center;
+    font-size: 12px;
+    color: #a0a0a0;
+  }
+}

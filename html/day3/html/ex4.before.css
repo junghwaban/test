@@ -1,0 +1,19 @@
+h1.my {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+h1.my .line {
+  width: 100%;
+  border-top: 1px solid black;
+  position: absolute;
+}
+h1.my .title {
+  background-color: #fff;
+  z-index: 1;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+}

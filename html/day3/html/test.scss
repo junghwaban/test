@@ -1,0 +1,69 @@
+$desktopContentWidth: 1180px;
+$gray10: #000000;
+$gray20: #181818;
+$gray30: #424242;
+$gray40: #616161;
+$gray50: #757575;
+$gray60: #999999;
+$gray70: #bfbfbf;
+$gray80: #dbdbdb;
+
+
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+body {
+  @include flex-column;
+  border: 1px solid $gray10;
+  padding-bottom: 4000px;
+
+  header {
+    border: inherit;
+    height: 100px;
+  }
+
+  main {
+    border: inherit;
+    height: 450px;
+    display: flex;
+
+    aside {
+      border: inherit;
+      width: 200px;
+      height: 100%;
+    }
+
+    article {
+      border: inherit;
+      flex: 1;
+      position: relative;
+
+      .circle {
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+        background-color: yellow;
+        border-radius: 50%;
+        position: sticky;
+        top: 10px;
+        left: 10px;
+      }
+    }
+
+  }
+
+  footer {
+    border: inherit;
+    height: 100px;
+  }
+}

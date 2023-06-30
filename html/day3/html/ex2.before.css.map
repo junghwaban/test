@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,CAAC,CAAC;EACA,UAAU,EAAE,UAAU;CACvB;;AAED,AAAA,IAAI,CAAA;EACF,MAAM,EAAE,MAAM;CACf;;AAED,AAAA,SAAS,CAAA;EACP,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;EACb,MAAM,EAAE,eAAe;CACxB;;AAED,AAAA,QAAQ,CAAC;EACP,QAAQ,EAAE,QAAQ;EAClB,IAAI,EAAE,KAAK;CACZ",
+    "sources": [
+        "ex2.before.scss"
+    ],
+    "names": [],
+    "file": "ex2.before.css"
+}

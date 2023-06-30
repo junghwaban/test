@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 4000px;
+}
+
+.position {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+}
+
+.example {
+  position: relative;
+  left: 200px;
+}
+
+.relative {
+  position: relative;
+  // top, bottom, left, right
+}
+
+.wrapper {
+  position: relative;
+  border: 1px solid red;
+  width: 400px;
+  height: 400px;
+
+  .absolute {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+  }
+}
+
+
+.fixed {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.sticky {
+  position: sticky;
+  top: 100px;
+}

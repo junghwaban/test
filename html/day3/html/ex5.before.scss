@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  border-bottom: 1px solid #efefef;
+  display: flex;
+  justify-content: center;
+}
+
+.header-content {
+  width: 1370px;
+}
+
+.menu-list {
+  display: flex;
+
+  li {
+    color: #909090;
+    font-size: 12px;
+    width: 96px;
+    height: 73px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+
+  }
+}
