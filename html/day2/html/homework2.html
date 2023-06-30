@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            width: 100%;
+            height: 200px;
+            border: 1px solid black;
+        }
+
+        main {
+            flex: 1 0;
+            border: 1px solid black;
+            display: flex;
+        }
+
+        aside {
+            width: 200px;
+            height: 100%;
+            border: 1px solid black;
+        }
+
+        article {
+            height: 100%;
+            flex: 1;
+            border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+        }
+
+        article .content {
+            flex: 1;
+        }
+
+        footer {
+            height: 200px;
+            border: 1px solid black;
+        }
+
+        article .content .row {
+            height: 550px;
+            margin: 10px;
+            border: 1px solid black;
+            display: flex;
+        }
+
+        article .content .row .box2 {
+            width: 50%;
+            height: 100%;
+            border: 1px solid black;
+            margin-right: 10px;
+        }
+
+        article .content .row .box3 {
+            width: 50%;
+            height: 100%;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <aside></aside>
+        <article>
+            <div class="content">
+                <section class="row">
+                    <div class="box box1"></div>
+                </section>
+                <section class="row">
+                    <div class="box box2"></div>
+                    <div class="box box3"></div>
+                </section>
+            </div>
+            <footer></footer>
+        </article>
+    </main>
+
+</body>
+
+</html>
