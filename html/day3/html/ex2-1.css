@@ -13,10 +13,10 @@ body {
     background-color: purple;
     width: 100px;
     height: 100px;
+    /* position: static; */
 
     &.box1 {
-      position: relative;
-      left: 20px;
+      position: static;
     }
 
     &.box2 {
@@ -29,12 +29,13 @@ body {
       right: 20px;
       bottom: 20px;
     }
-  }
 
+    &.box4 {}
+  }
 
 }
 
-.stiky-box {
+.sticky-box {
   width: 100px;
   height: 100px;
   background-color: blue;

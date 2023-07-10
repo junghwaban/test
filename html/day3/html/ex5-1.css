@@ -1,38 +1,103 @@
-ul,
-li {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+ul {
+    display: flex;
 }
 
 header {
-  border-bottom: 1px solid #EFEFEF;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    border-bottom: 1px solid #efefef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 header .header-content {
-  width: 1370px;
-  display: flex;
-  justify-content: space-between;
+    width: 1370px;
+    display: flex;
+    justify-content: space-between;
 }
 
 header .header-content nav ul {
-  display: flex;
-  gap: 20px;
+    display: flex;
+    gap: 20px;
 }
 
 header .header-content nav ul li {
-  width: 96px;
-  height: 73px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    width: 96px;
+    height: 73px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    color: #909090;
+    list-style: none;
 }
 
-header .header-content .action-box {}
+header .header-content .action-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-/* header .header-content nav ul li:not(:last-child) {
-  margin-right: 20px;
-} */
+header .header-content .action-box i {
+    font-size: 24px;
+    color: #626262;
+    margin-right: 19px;
+}
+
+article {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.row1 .main1 {
+    width: 100%;
+    height: 200px;
+}
+
+.row1 .main1 .main-title {
+    font-size: 75px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 12.75px;
+    text-align: center;
+}
+
+.row1 .main1 .main-title span {
+    color: #24C48A;
+}
+
+
+.row1 .main2 {
+    width: 1370px;
+    height: 725px;
+    flex-shrink: 0;
+    border: 1px solid black;
+    background-image: url("main_image.png");
+    z-index: 0;
+}
+
+.row1 .main2-cover {
+    width: 1370px;
+    height: 725px;
+    flex-shrink: 0;
+    border: 1px solid black;
+    background: rgba(0, 0, 0, 0.50);
+    opacity: 0.5;
+    position: absolute;
+    top: 389px;
+    z-index: 1;
+}
+
+.row1 .main2 .title {
+    z-index: 9;
+}
+
+.row1 .main2 .title .small {
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    z-index: 9;
+}

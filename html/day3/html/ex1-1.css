@@ -1,7 +1,6 @@
 :root {
   --my-font-size: 40px;
   --my-font-color: purple;
-  --primary-color: purple;
 }
 
 .outter {
@@ -18,17 +17,12 @@
       border: 1px solid blue;
     }
   }
-
-  /* .inner.active {
-    border: 1px solid blue;
-  } */
 }
 
 .overflow-box {
   width: 200px;
   height: 200px;
   border: 1px solid blue;
-  /* overflow: visible; */
   /* overflow: hidden; */
   /* overflow: scroll; */
   /* overflow: auto; */
