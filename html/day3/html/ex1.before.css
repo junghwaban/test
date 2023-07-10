@@ -2,38 +2,48 @@
   box-sizing: border-box;
 }
 
+:root {}
+
 .overflow {
   width: 300px;
   height: 300px;
   margin-bottom: 200px;
   border: 1px solid black;
 }
+
 .overflow .children {
   background-color: #574a4a;
 }
+
 .overflow.visible {
   overflow: visible;
 }
+
 .overflow.visible .children {
   width: 450px;
   height: 100px;
 }
+
 .overflow.hidden .children {
   width: 450px;
   height: 100px;
 }
+
 .overflow.scroll-x .children {
   width: 450px;
   height: 100px;
 }
+
 .overflow.scroll-y .children {
   width: 100px;
   height: 450px;
 }
+
 .overflow.auto1 .children {
   width: 450px;
   height: 450px;
 }
+
 .overflow.auto2 .children {
   width: 250px;
   height: 250px;

@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
+.tooltip {
+  position: relative;
+  margin: 100px;
+}
+.tooltip::before {
+  position: absolute;
+  left: -12px;
+  content: "";
+  border-left: 0px;
+  border-right: 12px solid #a8a5a5;
+  border-top: 10px solid rgba(255, 255, 255, 0);
+  border-bottom: 10px solid rgba(255, 255, 255, 0);
+}

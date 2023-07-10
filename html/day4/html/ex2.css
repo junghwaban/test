@@ -1,0 +1,9 @@
+.link-wrapper a:link {
+  color: red;
+}
+.link-wrapper a:visited {
+  color: orange;
+}
+.link-wrapper .box:hover {
+  border: 1px solid black;
+}

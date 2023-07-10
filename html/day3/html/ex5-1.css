@@ -1,0 +1,38 @@
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  border-bottom: 1px solid #EFEFEF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .header-content {
+  width: 1370px;
+  display: flex;
+  justify-content: space-between;
+}
+
+header .header-content nav ul {
+  display: flex;
+  gap: 20px;
+}
+
+header .header-content nav ul li {
+  width: 96px;
+  height: 73px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .header-content .action-box {}
+
+/* header .header-content nav ul li:not(:last-child) {
+  margin-right: 20px;
+} */

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .pseudo-mouse-action .naver-link:link {color: orange;}
+    .pseudo-mouse-action .naver-link:visited {color: red;}
+    .pseudo-mouse-action .naver-link:hover {color: yellow;}
+    
+    .pseudo-form .input-wrapper input:disabled {border: 10px solid gray;}
+    .pseudo-form .input-wrapper input:focus {border: 10px solid red;}
+    .pseudo-form .input-wrapper .submit:focus {border: 10px solid red;}
+
+    .pseudo-form .radio-wrapper .radio-input:checked {width: 100px; height: 100px;}
+    .pseudo-form .checkbox-wrapper .checkbox-input:checked {width: 100px; height: 100px;}
+
+    .pseudo-list .first-last-example li:first-child {color: red;}
+    .pseudo-list .first-last-example li:last-child {color: orange;}
+
+    .pseudo-list .nth-example li:nth-child(2) {color: red;}
+    .pseudo-list .nth-example li:nth-child(2n+1) {color: orange;}
+
+    .pseudo-list .nth-last-example li:nth-last-child(2) {color: red;}
+    .pseudo-list .nth-last-example li:nth-last-child(2n+1) {color: orange;}
+
+  </style>
+</head>
+<body>
+  <div class="pseudo-mouse-action">
+    <a class="naver-link" href="https://www.naver.com">네이버 링크</a>
+  </div>
+
+  <div class="pseudo-form">
+
+    <div class="input-wrapper">
+      <input disabled class="nickname-disabled" type="text">
+      <input class="nickname" type="text">
+      <button class="submit">버튼입니다</button>
+    </div>
+
+    <div class="radio-wrapper">
+      <input class="radio-input" id="true" type="radio" name="truefalse" value="true"><label for="true">true</label>
+      <input class="radio-input" id="false" type="radio" name="truefalse" value="false"><label for="false">false</label>
+    </div>
+
+    <div class="checkbox-wrapper">
+      <input type="checkbox" id="korean" class="checkbox-input" name="language" value="korean"><label for="korean">korean</label>
+      <input type="checkbox" id="english" class="checkbox-input" name="language" value="english"><label for="english">english</label>
+      <input type="checkbox" id="programing" class="checkbox-input" name="language" value="programing"><label for="programing">programing</label>
+    </div>
+
+  </div>
+
+  <div class="pseudo-list">
+    <ul class="first-last-example">
+      <li>목록1</li>
+      <li>목록2</li>
+      <li>목록3</li>
+      <li>목록4</li>
+      <li>목록5</li>
+    </ul>
+
+    <ul class="nth-example">
+      <li>목록1</li>
+      <li>목록2</li>
+      <li>목록3</li>
+      <li>목록4</li>
+      <li>목록5</li>
+    </ul>
+
+    <ul class="nth-last-example">
+      <li>목록1</li>
+      <li>목록2</li>
+      <li>목록3</li>
+      <li>목록4</li>
+      <li>목록5</li>
+    </ul>
+  </div>
+
+
+  
+</body>
+</html>

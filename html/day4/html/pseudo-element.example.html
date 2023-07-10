@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    ul, li {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .pseudo-element-first-letter {
+      margin-bottom: 100px;
+    }
+
+    .pseudo-element-first-letter::first-letter {
+      color: red;
+      font-size: 40px;
+    }
+
+    .pseudo-element-first-line {
+      margin-bottom: 100px;
+    }
+
+    .pseudo-element-first-line::first-line {
+      color: red;
+      font-size: 40px;
+    }
+
+    .pseudo-element-selection {
+      margin-bottom: 100px;
+    }
+
+    .pseudo-element-selection::selection {
+      color: red;
+      font-size: 40px;
+    }
+
+    .pseudo-element-before .before-default {
+      margin-bottom: 40px;
+    }
+
+    .pseudo-element-before .before-default::before{
+      content: 'this is before text';
+      color: green;
+      font-size: 20px;
+    }
+
+    .pseudo-element-before .tooltip{
+      position: relative;
+      display: inline-block;
+      padding: 20px 32px;
+      color: #ffffff;
+      background-color: #333333;
+      border-radius: 8px;
+      margin-left: 40px;
+      margin-bottom: 100px;
+    }
+
+    .pseudo-element-before .tooltip::before {
+      position: absolute;
+      left: -12px;
+      content: '';
+      border-left:0px;
+      border-right: 12px solid #a8a5a5;
+      border-top: 10px solid #ffffff00;
+      border-bottom: 10px solid #ffffff00;
+    }
+
+    .pseudo-element-after .after-list {
+      display: flex;
+    }
+
+    .pseudo-element-after .after-list .after-item{
+      color: #666666;
+      padding: 6px 12px;
+      position: relative;
+    }
+
+    .pseudo-element-after .after-list .after-item:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 6px;
+      height: 16px;
+      border-right: 1px solid #666666;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="pseudo-element-first-letter">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi tempore sequi magnam facilis laudantium officiis repellat nobis magni at quasi recusandae vitae fuga sit ipsum eveniet accusantium, architecto aut autem?
+  </div>
+
+  <div class="pseudo-element-first-line">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi tempore sequi magnam facilis laudantium officiis repellat nobis magni at quasi recusandae vitae fuga sit ipsum eveniet accusantium, architecto aut autem?
+  </div>
+
+  <div class="pseudo-element-selection">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi tempore sequi magnam facilis laudantium officiis repellat nobis magni at quasi recusandae vitae fuga sit ipsum eveniet accusantium, architecto aut autem?
+  </div>
+
+  <div class="pseudo-element-before">
+
+    <div class="before-default">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore natus iste ullam quia. Blanditiis voluptatibus beatae iste voluptatum ea exercitationem. Ipsum, nihil recusandae reprehenderit odit sit ad quod soluta adipisci!
+    </div>
+
+    <div class="tooltip">
+      이것은 툴팁입니당!
+    </div>
+  </div>
+
+  <div class="pseudo-element-after">
+    <ul class="after-list">
+      <li class="after-item">메뉴1</li>
+      <li class="after-item">메뉴2</li>
+      <li class="after-item">메뉴3</li>
+      <li class="after-item">메뉴4</li>
+      <li class="after-item">메뉴5</li>
+    </ul>
+  </div>
+  
+</body>
+</html>

@@ -1,0 +1,42 @@
+:root {
+  --my-font-size: 40px;
+  --my-font-color: purple;
+  --primary-color: purple;
+}
+
+.outter {
+  border: 1px solid black;
+  padding: 20px;
+
+  .inner {
+    border: 1px solid red;
+    padding: 20px;
+    font-size: var(--my-font-size);
+    color: var(--my-font-color);
+
+    &.active {
+      border: 1px solid blue;
+    }
+  }
+
+  /* .inner.active {
+    border: 1px solid blue;
+  } */
+}
+
+.overflow-box {
+  width: 200px;
+  height: 200px;
+  border: 1px solid blue;
+  /* overflow: visible; */
+  /* overflow: hidden; */
+  /* overflow: scroll; */
+  /* overflow: auto; */
+  overflow-x: auto;
+
+  .child {
+    width: 400px;
+    height: 100px;
+    background-color: violet;
+  }
+}

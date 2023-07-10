@@ -5,16 +5,47 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="test.css">
+  
+  <style>
+    .outter {
+      border: 1px solid black;
+      padding: 20px;
+
+      .inner {
+        border: 1px solid red;
+        padding: 20px;
+
+        .panel {
+          border: 1px solid blue;
+          padding: 20px;
+
+          .box {
+            border: 1px solid purple;
+            padding: 20px;
+          }
+        }
+      }
+    }
+
+  </style>
 </head>
 <body>
-  <header></header>
+  <div class="outter">
+    <div class="inner">
+      <div class="panel">
+        <div class="box">
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <header></header>
   <main>
     <aside></aside>
     <article>
       <div class="circle"></div>
     </article>
   </main>
-  <footer></footer>
+  <footer></footer> -->
 </body>
 </html>
