@@ -1,0 +1,533 @@
+:root {
+  --contentWidth: 1370px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+}
+
+ul, li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  border: 0;
+  background-color: inherit;
+}
+
+header {
+  border-bottom: 1px solid #efefef;
+}
+header .header-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  width: var(--contentWidth);
+  min-width: 360px;
+  height: 72px;
+  margin: 0 auto;
+}
+header .header-content .mobile-menu-button-wrapper {
+  padding: 10px;
+  cursor: pointer;
+  display: none;
+}
+header .header-content .mobile-menu-button-wrapper i {
+  font-size: 20px;
+  color: #626262;
+}
+header .header-content .menu-list {
+  display: flex;
+}
+header .header-content .menu-list > li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 96px;
+  height: 100%;
+  cursor: pointer;
+  color: #909090;
+  font-size: 12px;
+}
+header .header-content .menu-list > li:not(:first-child) {
+  margin-left: 20px;
+}
+header .header-content .menu-list > li:hover .dropdown-menu {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+header .header-content .menu-list > li .dropdown-menu {
+  visibility: hidden;
+  position: absolute;
+  background-color: #fff;
+  top: 22px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+  padding: 0 20px;
+  opacity: 0;
+}
+header .header-content .menu-list > li .dropdown-menu li {
+  padding: 16px 0;
+  width: 220px;
+  border-bottom: 1px solid #dbdbdb;
+}
+header .header-content .action-wrapper {
+  display: flex;
+}
+header .header-content .action-wrapper .social-link-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 20px;
+}
+header .header-content .action-wrapper .social-link-list li:not(:last-child) {
+  margin-right: 12px;
+}
+header .header-content .action-wrapper .social-link-list li i {
+  font-size: 20px;
+  color: #626262;
+  cursor: pointer;
+}
+header .header-content .action-wrapper .search-box i {
+  font-size: 24px;
+  color: #626262;
+  cursor: pointer;
+}
+
+.aside-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+.aside-overlay.open {
+  display: block;
+  z-index: 9999;
+}
+.aside-overlay.open aside {
+  visibility: visible;
+  margin-left: 0;
+}
+.aside-overlay aside {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 250px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: #ffffff;
+  margin-left: -250px;
+  transition: margin-left 0.5s;
+}
+.aside-overlay aside .aside-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 20px;
+  height: 72px;
+}
+.aside-overlay aside .aside-header h1 {
+  padding-left: 20px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #626262;
+}
+.aside-overlay aside .aside-content {
+  padding: 0 20px;
+}
+.aside-overlay aside .aside-content .menu-list > li .menu-title {
+  padding: 12px 20px;
+  color: #909090;
+  font-size: 12px;
+  cursor: pointer;
+}
+.aside-overlay aside .aside-content .menu-list > li > ul {
+  padding-left: 30px;
+}
+.aside-overlay aside .aside-content .menu-list > li > ul li {
+  list-style: disc;
+  list-style-position: inside;
+  color: #909090;
+  font-size: 12px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+main article {
+  width: var(--contentWidth);
+  min-width: 360px;
+  margin: 0 auto;
+}
+main article.main-header {
+  margin-bottom: 70px;
+}
+main article.main-header .logo {
+  font-size: 75px;
+  font-weight: lighter;
+  text-align: center;
+  letter-spacing: 0.17em;
+  padding: 62px 0;
+}
+main article.main-header .logo span {
+  color: #24C48A;
+}
+main article.main-header .top-post {
+  position: relative;
+  height: 725px;
+}
+main article.main-header .top-post img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main article.main-header .top-post .top-post-content-wrapper {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3137254902);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+main article.main-header .top-post .top-post-content-wrapper .top-post-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-items: center;
+}
+main article.main-header .top-post .top-post-content-wrapper .top-post-content h4 {
+  margin-top: 168px;
+  margin-bottom: 36px;
+  font-size: 16px;
+  color: #ffffff;
+}
+main article.main-header .top-post .top-post-content-wrapper .top-post-content h2 {
+  font-size: 45px;
+  font-weight: 400;
+  color: #ffffff;
+  margin-bottom: 56px;
+}
+main article.main-header .top-post .top-post-content-wrapper .top-post-content .countinue-btn {
+  font-size: 24px;
+  padding: 16px 20px;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+}
+main article.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+main article.main-content .post-list {
+  flex: 1;
+}
+main article.main-content .post-list h4 {
+  color: #c6c6c6;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+main article.main-content .post-list h2 {
+  font-size: 32px;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 48px;
+}
+main article.main-content .post-list .blog-post-image {
+  width: 100%;
+  height: 683px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 40px;
+}
+main article.main-content .post-list p {
+  color: #959595;
+  font-size: 16px;
+  margin-bottom: 24px;
+}
+main article.main-content .post-list p:last-child {
+  margin-bottom: 40px;
+}
+main article.main-content .post-list .button-wrapper {
+  text-align: center;
+}
+main article.main-content .post-list .button-wrapper button {
+  font-size: 16px;
+  padding: 4px 7.5px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+main article.main-content .author-info {
+  width: 320px;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+}
+main article.main-content .author-info .info-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: #666666;
+  height: 35px;
+  margin-bottom: 20px;
+}
+main article.main-content .author-info .info-title span {
+  display: inline-block;
+  background-color: #fff;
+  padding: 0 10px;
+}
+main article.main-content .author-info .info-title::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  border-top: 1px solid #666;
+  z-index: -1;
+}
+main article.main-content .author-info .about-me {
+  margin-bottom: 52px;
+}
+main article.main-content .author-info .about-me .about-me-image {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 337px;
+  margin-bottom: 32px;
+}
+main article.main-content .author-info .about-me p {
+  color: #959595;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+}
+main article.main-content .author-info .instagram .instagram-image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+main article.main-content .author-info .instagram .instagram-image-wrapper img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: calc(50% - 8px);
+  margin-bottom: 16px;
+}
+
+footer {
+  padding: 50px 0;
+  margin-top: 120px;
+  border-top: 1px solid #efefef;
+}
+footer p {
+  text-align: center;
+  font-size: 12px;
+  color: #a0a0a0;
+}
+
+@media screen and (min-width: 1240px) and (max-width: 1439px) {
+  :root {
+    --contentWidth: 1040px;
+  }
+  main article.main-content .author-info {
+    width: 331px;
+  }
+}
+@media screen and (min-width: 905px) and (max-width: 1239px) {
+  :root {
+    --contentWidth: 840px;
+  }
+  header .header-content .mobile-menu-button-wrapper {
+    display: block;
+  }
+  header .header-content .menu-list {
+    display: none;
+  }
+  aside {
+    display: block;
+  }
+  main article.main-header .top-post {
+    height: 600px;
+  }
+  main article.main-content {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  main article.main-content .post-list {
+    margin-bottom: 50px;
+  }
+  main article.main-content .author-info {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 0;
+  }
+  main article.main-content .author-info .about-me,
+main article.main-content .author-info .instagram {
+    width: 408px;
+  }
+  main article.main-content .author-info .about-me .instagram-image-wrapper img,
+main article.main-content .author-info .instagram .instagram-image-wrapper img {
+    width: calc(50% - 14px);
+    margin-bottom: 28px;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 904px) {
+  :root {
+    --contentWidth: calc(100% - 64px);
+  }
+  header .header-content .mobile-menu-button-wrapper {
+    display: block;
+  }
+  header .header-content .menu-list {
+    display: none;
+  }
+  aside {
+    display: block;
+  }
+  main article.main-header .logo {
+    font-size: 42px;
+  }
+  main article.main-header .top-post {
+    height: 360px;
+  }
+  main article.main-header .top-post .top-post-content-wrapper .top-post-content h4 {
+    font-size: 12px;
+    margin-top: 80px;
+  }
+  main article.main-header .top-post .top-post-content-wrapper .top-post-content h2 {
+    font-size: 30px;
+  }
+  main article.main-header .top-post .top-post-content-wrapper .top-post-content .countinue-btn {
+    font-size: 18px;
+  }
+  main article.main-content {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  main article.main-content .post-list {
+    margin-bottom: 50px;
+  }
+  main article.main-content .post-list h4 {
+    font-size: 12px;
+  }
+  main article.main-content .post-list h2 {
+    font-size: 24px;
+  }
+  main article.main-content .author-info {
+    width: 100%;
+    margin-left: 0;
+  }
+  main article.main-content .author-info .about-me .instagram-image-wrapper img,
+main article.main-content .author-info .instagram .instagram-image-wrapper img {
+    width: calc(50% - 8px);
+    margin-bottom: 16px;
+  }
+  footer {
+    height: 60px;
+    padding: 23px;
+  }
+  footer p {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 599px) {
+  :root {
+    --contentWidth: calc(100% - 32px);
+  }
+  header .header-content .mobile-menu-button-wrapper {
+    display: block;
+  }
+  header .header-content .menu-list {
+    display: none;
+  }
+  aside {
+    display: block;
+  }
+  main article.main-header .logo {
+    font-size: 24px;
+  }
+  main article.main-header .top-post {
+    height: 300px;
+  }
+  main article.main-header .top-post .top-post-content-wrapper .top-post-content h4 {
+    font-size: 12px;
+    margin-top: 80px;
+    margin-bottom: 24px;
+  }
+  main article.main-header .top-post .top-post-content-wrapper .top-post-content h2 {
+    font-size: 24px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 32px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  main article.main-header .top-post .top-post-content-wrapper .top-post-content .countinue-btn {
+    font-size: 18px;
+  }
+  main article.main-content {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  main article.main-content .post-list {
+    margin-bottom: 50px;
+    width: 100%;
+  }
+  main article.main-content .post-list h4 {
+    font-size: 12px;
+  }
+  main article.main-content .post-list h2 {
+    font-size: 24px;
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  main article.main-content .post-list .blog-post-image {
+    height: 300px;
+  }
+  main article.main-content .author-info {
+    width: 100%;
+    margin-left: 0;
+  }
+  main article.main-content .author-info .about-me .instagram-image-wrapper img,
+main article.main-content .author-info .instagram .instagram-image-wrapper img {
+    width: calc(50% - 8px);
+    margin-bottom: 16px;
+  }
+  footer {
+    height: 60px;
+    padding: 23px;
+  }
+  footer p {
+    margin: 0;
+  }
+}

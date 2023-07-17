@@ -1,0 +1,12 @@
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  min-width: 440px;
+}
+.row .items {
+  width: 24%;
+  height: 200px;
+  margin-bottom: 20px;
+}
