@@ -1,0 +1,29 @@
+.box {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    transition: all 4s;
+}
+
+.box1 {
+    transform: rotate(45deg);
+}
+
+.box2 {
+    transform: translate(100px, 100px);
+}
+
+.box3 {
+    transform: scale(2);
+}
+
+.box4 {
+    transform: skew(30deg);
+}
+
+.box5 {
+    /* background-color: black; */
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    /* opacity: 0.2; */
+}

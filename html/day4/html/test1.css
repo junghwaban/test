@@ -1,0 +1,61 @@
+.first-letter::first-letter {
+    font-size: 40px;
+    color: red;
+}
+
+.first-line::first-line {
+    font-size: 40px;
+    color: red;
+}
+
+.selection::selection {
+    font-size: 40px;
+    color: orange;
+    background-color: blue;
+}
+
+/* .prefix li::before {
+    content: '이건 before 야';
+    color: orange;
+} */
+
+.say-bofre::before {
+    content: '이건 before 야';
+    color: orange;
+}
+
+.my-dot::before {
+    content: '';
+    display: block;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: orange;
+    position: relative;
+    left: -8px;
+    top: 10px;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 12px;
+}
+
+/* .menu li {
+    padding: 8px 12px;
+    border-right: 1px solid black;
+} */
+.menu li {
+    position: relative;
+    padding: 8px 12px;
+}
+
+.menu li:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 15px;
+    right: -6px;
+    height: 12px;
+    border-right: 1px solid black;
+}

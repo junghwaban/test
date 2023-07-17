@@ -1,3 +1,10 @@
+ul,
+li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
 ul {
     display: flex;
 }
@@ -31,6 +38,10 @@ header .header-content nav ul li {
     list-style: none;
 }
 
+a {
+    text-decoration: none;
+}
+
 header .header-content .action-box {
     display: flex;
     justify-content: center;
@@ -45,21 +56,24 @@ header .header-content .action-box i {
 
 article {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .row1 .main1 {
     width: 100%;
-    height: 200px;
+    height: 88px;
+    font-size: 75px;
+    margin-bottom: 50px;
+}
+
+.row1 .main2 .title {
+    position: relative;
+    top: 168px;
+    left: 374px;
 }
 
 .row1 .main1 .main-title {
-    font-size: 75px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    letter-spacing: 12.75px;
     text-align: center;
 }
 
@@ -67,26 +81,12 @@ article {
     color: #24C48A;
 }
 
-
 .row1 .main2 {
     width: 1370px;
     height: 725px;
-    flex-shrink: 0;
     border: 1px solid black;
+    margin-bottom: 50px;
     background-image: url("main_image.png");
-    z-index: 0;
-}
-
-.row1 .main2-cover {
-    width: 1370px;
-    height: 725px;
-    flex-shrink: 0;
-    border: 1px solid black;
-    background: rgba(0, 0, 0, 0.50);
-    opacity: 0.5;
-    position: absolute;
-    top: 389px;
-    z-index: 1;
 }
 
 .row1 .main2 .title {
@@ -94,10 +94,198 @@ article {
 }
 
 .row1 .main2 .title .small {
-    color: #FFF;
     font-size: 16px;
-    font-style: normal;
+    color: #fff;
+    position: relative;
+    left: 161px;
+}
+
+.row1 .main2 .title .large {
+    font-size: 45px;
+    color: #fff;
+}
+
+.row1 .main2 .title button {
+    all: unset;
+    width: 262px;
+    height: 60px;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 16px 20px 16px 20px;
+    text-align: center;
+    position: relative;
+    left: 177px;
+}
+
+.main2-cover {
+    width: 1370px;
+    height: 725px;
+    background-color: black;
+    opacity: 0.5;
+    position: relative;
+    top: -282px;
+    z-index: 0;
+}
+
+
+.row2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.row2 .main3 {
+    width: 1020px;
+    height: 1087px;
+}
+
+.row2 .main3 .main3-small {
+    font-size: 16px;
+    color: #c6c6c6;
+    text-align: center;
+}
+
+.row2 .main3 .main3-large {
+    font-size: 37.5px;
+    color: #000;
+    text-align: center;
+    font-weight: 700;
+}
+
+.row2 .main3 .main3-image {
+    background-image: url("rectangle9.png");
+    width: 1020px;
+    height: 683px;
+}
+
+.row2 .main3 .main3-content-letter1 {
+    font-size: 16px;
+    color: #969696;
+}
+
+.row2 .main3 .main3-content-letter2 {
+    font-size: 16px;
+    color: #969696;
+}
+
+.row2 .main3 .main3-bottom {
+    width: 187px;
+    position: relative;
+    left: 400px;
+    top: 50px;
+}
+
+.row2 .main3 .main3-bottom-letter {
+    font-size: 16px;
     font-weight: 400;
-    line-height: normal;
-    z-index: 9;
+    text-align: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+
+.row2 .side {
+    margin-left: 30px;
+}
+
+.row2 .about-me {
+    width: 320px;
+    height: 591px;
+    margin-bottom: 50px;
+}
+
+.side .about-me .group1 .line {
+    width: 320px;
+    border-top: 1px solid #666;
+    position: relative;
+    top: 38px;
+}
+
+.side .about-me .group1 .title {
+    display: block;
+    position: relative;
+    left: 95px;
+    padding: 8px;
+    width: 108.37px;
+    height: 35px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.side .about-me .about-me-image {
+    background-image: url("Rectangle8.png");
+    width: 320px;
+    height: 337px;
+}
+
+.row2 .instagram {
+    width: 320px;
+    height: 375px;
+
+}
+
+.side .instagram .group2 .title {
+    display: block;
+    position: relative;
+    left: 95px;
+    padding: 8px;
+    width: 108.37px;
+    height: 35px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.side .instagram .group2 .line {
+    width: 320px;
+    border-top: 1px solid #666;
+    position: relative;
+    top: 38px;
+}
+
+.instagram .instagram-image-group {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.instagram .instagram-image-group .box {
+    width: 152px;
+    height: 152px;
+    margin-bottom: 10px;
+}
+
+.instagram .instagram-image-group .image1 {
+    background-image: url("Rectangle12.png");
+    background-size: cover;
+}
+
+.instagram .instagram-image-group .image2 {
+    background-image: url("Rectangle13.png");
+    background-size: cover;
+}
+
+.instagram .instagram-image-group .image3 {
+    background-image: url("Rectangle14.png");
+    background-size: cover;
+}
+
+.instagram .instagram-image-group .image4 {
+    background-image: url("Rectangle15.png");
+    background-size: cover;
+}
+
+footer {
+    width: 1920px;
+    border-top: 1px solid #efefef;
+    top: 2289px;
+    position: absolute;
+    padding: 30px;
+}
+
+footer p {
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    color: #a0a0a0;
+    width: 100vw;
+    line-height: 14.06px;
 }

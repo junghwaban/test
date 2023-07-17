@@ -1,0 +1,37 @@
+.a-tag a:link {
+    color: blue;
+}
+
+.a-tag a:visited {
+    color: red;
+}
+
+.a-tag a:hover {
+    color: purple;
+}
+
+.form .focus-me:focus {
+    padding: 20px;
+    border: 3px solid red;
+}
+
+/* .form .focus-me:disabled {
+    padding: 20px;
+    background-color: gray;
+} */
+.form .check-me:checked {
+    width: 100px;
+    height: 100px;
+}
+
+.list .item:first-child {
+    color: red;
+}
+
+.list .item:last-child {
+    color: blue;
+}
+
+.list .item:nth-child(2n+1) {
+    color: orange;
+}

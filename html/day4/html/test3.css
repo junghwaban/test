@@ -1,0 +1,22 @@
+.list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.list li {
+    position: relative;
+}
+
+.list li::after {
+    content: '';
+    position: absolute;
+    top: 7px;
+    right: -6px;
+    height: 12px;
+    border-right: 1px solid black;
+}
+
+.list li:hover {
+    color: orange;
+}
